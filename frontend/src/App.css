@@ -1,0 +1,1360 @@
+:root{
+  --submit-hover: rgba(0, 0, 0, 0.231);
+
+	--app-shadow-color: rgba(13, 110, 253, 0.25);
+	--app-text-color: black;
+	--app-background-color: white;
+}
+
+.system-color-scheme{
+	background-color: white;
+	color: black;
+}
+.system-color-scheme .app-background{
+	background-color: white;
+	color: black;
+}
+.system-color-scheme .app-text-color{
+	color: black;
+}
+
+.light-color-scheme{
+	background-color: white;
+	color: black;
+}
+.light-color-scheme .app-background{
+	background-color: white;
+	color: black;
+}
+.light-color-scheme .app-text-color{
+	color: black;
+}
+.light-color-scheme :root{
+	--app-shadow-color: rgba(13, 110, 253, 0.25);
+	--app-text-color: black;
+	--app-background-color: white;
+}
+
+.dark-color-scheme{
+	background-color: black;
+	color: white;
+}
+.dark-color-scheme .app-background{
+	background-color: black;
+	color: white;
+}
+.dark-color-scheme .app-text-color{
+	color: white;
+}
+.dark-color-scheme{
+	--app-shadow-color: rgba(255, 255, 255, 0.95);
+	--app-text-color: white;
+	--app-background-color: black;
+}
+
+.default-color-scheme{
+	background-color: black;
+	color: white;
+}
+.default-color-scheme .app-background{
+	background-color: black;
+	color: white;
+}
+.default-color-scheme .app-text-color{
+	color: white;
+}
+.default-color-scheme{
+	--app-shadow-color: rgba(255, 255, 255, 0.95);
+	--app-text-color: white;
+	--app-background-color: black;
+}
+
+.lg\:flex{
+  display: flex;
+}
+
+.no-wrap{
+  text-wrap: nowrap;
+}
+
+.\1px-solid-red{
+  border: 1px solid red
+}
+
+.justify-self-end{
+	justify-self: end;
+}
+
+.justify-self-start{
+	justify-self: start;
+}
+
+/*****************************************************************************************************************/
+.app-logo{
+  /* background-color: rgba(28, 83, 248, 0.753); */
+  color: rgba(54, 54, 247, 0.776);
+  border-radius:3px;
+}
+
+.app-layout{
+  width: 70%;
+  margin-inline: 15%;
+}
+
+.app-content{
+  /* margin-top: 75px; */
+  margin-top: 4.68rem;
+}
+
+.auth-layout{
+  /* width: 30%; */
+  margin-inline: 35%;
+}
+
+.fixed-to-app-layout{
+  left: 15%;
+  right: 15%;
+}
+
+.home-search-input{
+  border-radius: 3px;
+  /* border: 0.1px solid black; */
+  border: 0.08rem solid black;
+  padding-left: 28px;
+}
+
+.close-search-input{
+  right: 0px;
+  top: 0.38rem;
+}
+
+.custom-input{
+  display: block;
+  border-radius: 3px;
+  /* border: 0.1px solid black; */
+  border: 0.08rem solid black;
+	padding-left: 0.3rem;
+  /* outline: none; */
+  width: 100%;
+  margin-top: 3px;
+}
+
+.custom-input-error{
+  display: block;
+  border-radius: 3px;
+  border: 0.1px solid red;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.custom-input-inline{
+  border-radius: 3px;
+  border: 0.1px solid black;
+  margin: 2px 0px 10px 0px;
+}
+
+.custom-input:focus, .home-search-input:focus{
+  outline: 1px solid blue;
+  /* right, bottom, blur, thickness */
+  /* box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); */
+  box-shadow: 0 0 0 0.1rem rgba(13, 110, 253, 0.25);
+}
+
+.custom-input-container{
+  margin-block: 8px;
+}
+
+.invalid-custom-input{
+  border: 1px solid red;
+}
+
+/* buttons */
+.custom-button{
+  border: 1px solid var(--app-text-color);
+  border-radius: 3px;
+	color: var(--app-text-color);
+	background-color: var(--app-background-color);
+}
+
+.custom-button-green{
+  border: 1px solid green;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.custom-button-red{
+  border: 1px solid red;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.custom-button-gray{
+  border: 1px solid gray;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.custom-button-green:hover{
+  background-color: var(--submit-hover);
+}
+
+.custom-button{
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: pointer;
+}
+
+.option-like-btn{
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 3px;
+  background-color: rgba(176, 176, 176, 0.336);
+}
+
+.custom-icon, .custom-icon-lg, .custom-icon-xl, .custom-icon-xxl{
+  cursor: pointer;
+}
+.custom-icon{
+  width: 20px;
+  height: 20px;
+}
+.custom-icon-md{
+  width: 25px;
+  height: 25px;
+}
+.custom-icon-lg{
+  width: 27px;
+  height: 27px;
+}
+.custom-icon-xl{
+  width: 30px;
+  height: 30px;
+}
+.custom-icon-xxl{
+  width: 35px;
+  height: 35px;
+}
+
+.c-icon{
+	width: 1.4rem;
+	height: 1.4rem;
+}
+
+.c-icon-sm{
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.cms-3{
+  margin-left: 15px;
+}
+
+.c-ms-2{
+	margin-left: 0.4rem;
+}
+
+.no-white-space{
+  white-space: nowrap;
+}
+
+.content-box{
+  box-sizing: content-box;
+}
+
+.border-box{
+  box-sizing: border-box;
+}
+
+/* .filter-white{
+  filter: invert(48%) sepia(79%) saturate(2000%) hue-rotate(86deg) brightness(118%) contrast(119%);
+} */
+
+/* forms */
+.login-form, .change-password-form{
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.account-edit-form{
+	margin-top: 8vh;
+	margin-bottom: 8vh;
+}
+
+.register-form{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+/* Navbar start */
+.app-nav{
+  position: fixed;
+  top: 0px;
+  /* height: 73px; */
+  height: 4.6rem;
+  z-index: 2;
+  opacity: 1;
+}
+
+.main-nav-layout{
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+	margin-top: 0.5rem;
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.main-nav-layout li{
+  padding-left: 0px;
+  margin-left: 0px;
+}
+
+.main-nav{
+  /* padding: 5px 5px 0px 5px; */
+  padding-top: 5px;
+}
+
+.custom-nav-item{
+  font-weight: 600;
+}
+
+.active{
+  filter: brightness(120%);
+  font-weight: 500;
+}
+
+.account-option{
+  top: 43px;
+  right: 0px;
+  padding: 10px;
+  opacity: 1;
+  /* box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.231); */
+	box-shadow: 1px 1px 1px var(--app-shadow-color), -0.5px -0.5px 1px var(--app-shadow-color);
+	border-radius: 2px;
+  z-index: 5;
+}
+
+.account-option li{
+  margin-block: 3px;
+}
+
+/* Navbar end */
+
+/* Filter form */
+
+.filter-form{
+  border-top: 0.5px solid rgba(39, 37, 37, 0.4);
+  padding-top: 3px;
+}
+
+.filter-input{
+  border-radius: 3px;
+  border: 0.1px solid black;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.filter-br{
+  margin-top: 0.5px;
+  margin-bottom: 1px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Filter form end */
+
+/* Home start */
+
+.user-profile, .jobs--user-profile--list-view{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.post-detail{
+  margin-top: 2px;
+  line-height: 19px;
+}
+
+.post-body{
+  margin: 10px 0px;
+}
+
+.post-image{
+  width: 100%;
+  padding: 0px 1px;
+}
+
+.post-horizontal-line{
+  background-color: black;
+  height: 2px;
+}
+/* Home end */
+
+/* Popup */
+.info-popup{
+  z-index: 3;
+  position: fixed;
+  bottom: 20px;
+  margin-inline: 10px;
+  background-color: rgb(117, 225, 117);
+  padding-block: 10px;
+  padding-inline: 15px;
+  border-radius: 5px;
+}
+
+.form-popup{
+  z-index: 3;
+  position: fixed;
+	top: 25vh;
+  bottom: 25vh;
+	left: 25%;
+	right: 25%;
+  margin-inline: 10px;
+  background-color: var(--app-background-color);
+	box-shadow: 1px 1px 1px var(--app-shadow-color), -1px -1px 1px var(--app-shadow-color);
+  padding-block: 10px;
+  padding-inline: 15px;
+  border-radius: 5px;
+}
+
+.form-popup--footer{
+	bottom: 0px;	
+	width: 100%;
+}
+
+.form-popup--header{
+	top: 0px;	
+	width: 100%;
+}
+
+/* Popup end */
+
+/* Upshots start */
+.upshots-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+}
+
+.reaction-popup{
+  padding: 3px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  left: 5px;
+  bottom: 28px;
+}
+
+.reaction-popup span{
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.comment-form-layout{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.comment-textarea{
+  width: 100%;
+}
+
+.comment-popup{
+  z-index: 2;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  position:absolute;
+}
+
+.comment-list{
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.comment-form{
+  background-color: white;
+}
+
+/* Upshots end */
+
+/* Chat start */
+.chat-navbar{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.chat-search-container{
+  text-align: end;
+}
+
+.home-search-icon{
+  position: absolute;
+  /* left: 2px; */
+  /* top: 4.5px; */
+	left: 0.25rem;
+  top: 0.45rem;
+  opacity: 1;
+}
+
+.chat-search-input{
+  width: 450px;
+  padding-left: 27px;
+}
+
+.chat-user-item-lg{
+  object-fit: cover;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+}
+
+.chat-user-item{
+  object-fit: cover;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.chat-user-item-xsm{
+  object-fit: cover;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+}
+
+.text-item{
+  border-radius: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-block: 2px;
+}
+/* Chat end */
+
+/* Accout start */
+.profile-image-container, .cover-image-container{
+  position: relative;
+}
+
+.cover-image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.profile-image-container{
+  width: 160px;
+  height: 160px;
+  margin-top: -40px;
+  /* margin-left: 10px; */
+  margin-left: 0.6rem;
+	margin-right: 0.6rem;
+}
+
+.profile-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid white;
+}
+
+.profile-camera, .anti-profile-camera, .cover-camera{
+  background-color: black;
+  padding: 1.5px;
+  cursor: pointer;
+  border: 1.5px solid white;
+}
+.profile-camera{
+  /* bottom: 18px;
+  right: 11px; */
+	bottom: 1.1rem;
+  right: 0.68rem;
+}
+.anti-profile-camera{
+	bottom: 1.1rem;
+  left: 0.68rem;
+}
+
+.cover-camera-wrapper{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+.cover-camera{
+  border-radius: 5px;
+}
+
+.profile-banner-layout{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.account-edit-option-ctn{
+  text-align: end;
+  position: relative;
+}
+
+.account-edit-option{
+  text-align: start;
+  padding: 2px 5px;
+  border-radius: 2px;
+  right: 0px;
+  position: absolute;
+  /* width: 90px; */
+  /* box-shadow: 0.5px 0.3px 2px rgb(53, 52, 52); */
+  width: 6rem;
+	box-shadow: 1px 1px 1px var(--app-shadow-color);
+}
+
+.user-details, .user-list, .custom-list{
+  list-style-type: none;
+  list-style-position: initial;
+  display: block;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+
+.logout-confirm{
+  position: absolute;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 100px;
+  left: 25%;
+  right: 25%;
+  top: 30vh;
+  /* box-shadow: 0px 0px 1px black; */
+  box-shadow: 1.5px 1.5px 2px var(--app-shadow-color), -1.5px -1.5px 2px var(--app-shadow-color);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-like-btn{
+  padding: 3px;
+  cursor: pointer;
+}
+
+.link-like-btn:hover{
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.644), white);
+}
+
+.is-active{
+  background-image: linear-gradient(to top, rgba(94, 89, 89, 0.694), white);
+}
+/* Account end */
+
+/* ************************************************************************************************************** */
+
+/* job filter */
+.filter-exclude-ctn{
+  position: fixed;
+  /* top: 85px; */
+  top: 5.3rem;
+  left: 50%;
+  right: 15%;
+  z-index: 2;
+  box-shadow: 0.8px 0.8px 3px var(--app-shadow-color);
+}
+
+.filter-wrapper{
+  background-color: white;
+  /* height: 400px; */
+  /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), -2px -2px 4px rgba(255, 255, 255, 0.5); */
+  box-shadow: -2px 0px 4px rgba(200, 200, 200, 0.5);
+}
+
+.filter-body{
+  height: 300px;
+  padding-inline: 15px;
+  overflow-y: scroll;
+}
+
+.filter-header{
+  top: 0px;
+}
+
+.filter-footer{
+  bottom: 0px;
+}
+
+.filter-header, .filter-footer{
+  right: 0px;
+  left: 0px;
+}
+
+.filter-exclude-input{
+  margin-block: 5px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 2fr; */
+}
+
+.filter-input-field{
+  margin-left: 15px;
+}
+
+.filter-checkbox-ctn{
+  display: flex;
+}
+
+.second-filter-checkbox{
+  margin-left: 10px;
+}
+
+.salary-filter-label{
+  width: 60px;
+}
+
+.custom-hr{
+  margin-top: 5px;
+  margin-bottom: 13px;
+}
+
+.custom-hr-thin{
+  margin-top: 0px;
+  margin-bottom: 13px;
+}
+
+/* ************************************************************************************************************** */
+
+.post-dropdown{
+  text-align: right;
+  position: absolute;
+  right: 5px;
+}
+
+/* ************************************************************************************************************** */
+
+/* job start */
+.jobs-banner{
+  position: fixed;
+  /* top: 70px; */
+  top: 4.37rem;
+  z-index: 1;
+}
+
+.jobs-content{
+  /* margin-top: 115px; */
+  margin-top: 7.18rem;
+}
+
+.job-dropdown{
+  position: absolute;
+  right: 0px;
+  padding: 2px 5px;
+  /* box-shadow: 0.8px 0.8px 3px rgba(2, 2, 2, 0.5); */
+  box-shadow: 0.8px 0.8px 3px var(--app-shadow-color);
+}
+
+.filter-input-sm{
+  width: 100px;
+}
+
+.filter-input-lg{
+  width: 115px;
+  margin-inline: 5px;
+}
+
+.filter-input-double{
+  /* width: 200px; */
+  width: 100%;
+}
+
+/* job end */
+
+/* ************************************************************************************************************** */
+
+.option-list{
+  list-style-position: outside;
+}
+
+/* ************************************************************************************************************** */
+.cursor-pointer{
+  cursor: pointer;
+}
+
+.custom-link{
+  text-decoration: none;
+}
+
+.position-absolute{
+  position: absolute;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.select-none{
+  user-select: none;
+}
+
+.text-capitalize{
+  text-transform: capitalize;
+}
+
+.text-capitalize{
+  text-transform: uppercase;
+}
+
+.full-height{
+  height: 100vh;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.min-w-25{
+  min-width: 25px;
+}
+
+.min-h-25{
+  min-height: 26px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Under less than 960 */
+@media(max-width: 960px){
+  .fixed-to-app-layout{
+    left: 10%;
+    right: 10%;
+  }
+
+  .app-layout{
+    width: 80%;
+    margin-inline: 10%;
+  }
+
+  .auth-layout{
+    margin-inline: 25%;
+  }
+
+  /* filter */
+  .filter-exclude-input{
+    display: block;
+  }
+
+  .filter-input-field{
+    margin-left: 20px;
+  }
+}
+
+@media(max-width: 860px){
+  .fixed-to-app-layout{
+    left: 5%;
+    right: 5%;
+  }
+
+  .app-layout{
+    width: 90%;
+    margin-inline: 5%;
+  }
+
+  .filter-exclude-ctn{
+    left: 45%;
+    right: 5%;
+  }
+
+
+}
+
+@media(max-width: 760px){
+  .fixed-to-app-layout{
+    left: 3%;
+    right: 3%;
+  }
+
+  .filter-exclude-ctn{
+    left: 40%;
+    right: 3%;
+  }
+
+  .app-layout{
+    width: 94%;
+    margin-inline: 3%;
+  }
+
+  .auth-layout{
+    margin-inline: 25%;
+  }
+
+  /* account */
+  .cover-image{
+    height: 280px;
+  }
+  
+  .profile-image-container{
+    width: 130px;
+    height: 130px;
+		margin-left: 0.4rem;
+		margin-right: 0.4rem;
+  }
+
+  .profile-camera{
+    /* bottom: 17px;
+    right: 7px; */
+		bottom: 1rem;
+		right: 0.2rem;
+  }
+  .anti-profile-camera{
+		bottom: 1rem;
+		left: 0.2rem;
+  }
+
+  /* popup */
+
+  .logout-confirm{
+    left: 20%;
+    right: 20%;
+  }
+}
+
+@media(max-width: 660px){
+  .auth-layout{
+    width: 50%;
+    margin-inline: 25%;
+  }
+
+  /* .filter-wrapper{
+    margin-left: 200px;
+  } */
+
+  /* account */
+  .cover-camera-wrapper{
+    bottom: 10px;
+    right: 15px;
+  }
+}
+
+@media(max-width: 560px){
+  .auth-layout{
+    width: 58%;
+    margin-inline: 21%;
+  }
+
+  .filter-exclude-ctn{
+    left: 30%;
+    background-color: red;
+  }
+
+  /* job filter form */
+  .filter-wrapper{
+    margin-left: 115px;
+  }
+
+  /* account */
+  .cover-image{
+    height: 250px;
+  }
+  
+  .profile-image-container{
+    width: 110px;
+    height: 110px;
+  }
+
+  .profile-camera{
+    /* bottom: 13px;
+    right: 5px; */
+		bottom: 0.7rem;
+		right: 0.1rem;
+  }
+  .anti-profile-camera{
+		bottom: 0.7rem;
+		left: 0.1rem;
+  }
+
+  .cover-camera-wrapper{
+    right: 12px;
+  }
+}
+
+@media(max-width: 460px){
+  /* nav bar */
+  .home-search-icon{
+    top: 0.5rem;
+  }
+
+  .home-search-input{
+    padding-left: 24px;
+  }
+
+  .app-layout{
+    width: 95%;
+    margin-inline: 2.5%;
+  }
+  
+  .auth-layout{
+    margin-inline: 20%;
+    width: 60%;
+  }
+
+  .fixed-to-app-layout{
+    left: 2.5%;
+    right: 2.5%;
+  }
+
+  .filter-exclude-ctn{
+    left: 20%;
+    right: 2.5%;
+  }
+  
+  /* account */
+  .cover-image{
+    height: 230px;
+  }
+  
+  .profile-image-container{
+    width: 95px;
+    height: 95px;
+  }
+
+  .profile-camera{
+    /* bottom: 10px;
+    right: 4px; */
+		bottom: 0.7rem;
+		right: 0.2rem;
+  }
+  .anti-profile-camera{
+		bottom: 0.7rem;
+		left: 0.2rem;
+  }
+
+  /* filter form */
+  .filter-wrapper{
+    margin-left: 130px;
+  }
+
+  /* popup */
+  .logout-confirm{
+    left: 18%;
+    right: 18%;
+  }
+
+  .custom-icon-lg{
+    width: 23px;
+    height: 23px;
+  }
+}
+
+@media(max-width: 460px) and (min-height: 200px){
+	.login-form, .change-password-form{
+		margin-top: 9vh;
+		margin-bottom: 9vh;
+	}
+}
+
+
+@media(max-width: 460px) and (min-height: 280px){
+	.login-form, .change-password-form{
+		margin-top: 12vh;
+		margin-bottom: 12vh;
+	}
+}
+
+@media(max-width: 460px) and (min-height: 300px){
+	.login-form, .change-password-form{
+		margin-top: 14vh;
+		margin-bottom: 14vh;
+	}
+}
+
+@media (max-width: 460px) and (min-height: 400px){
+	.login-form, .change-password-form{
+		margin-top: 15vh;
+		margin-bottom: 15vh;
+	}
+}
+
+
+@media(max-width: 480px){
+  .auth-layout{
+    margin-inline: 10%;
+    width: 80%;
+  }
+}
+
+@media(max-width: 380px){
+  .filter-checkbox-ctn{
+    display: initial;
+  }
+  
+  .second-filter-checkbox{
+    margin-left: 0px;
+  }
+
+  .filter-input-sm{
+    width: 80px;
+  }
+}
+
+@media(max-width: 360px){
+	.auth-layout{
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+  .filter-exclude-ctn{
+    left: 30%;
+  }
+
+  /* nav bar */
+  .home-search-input{
+    width: 150px;
+  }
+
+  .home-search-icon{
+    top: 0.5rem;
+  }
+
+  /* filter */
+  .filter-wrapper{
+    margin-left: 0px;
+  }
+
+  .filter-input-sm{
+    width: 100px;
+  }
+
+  /* account */
+  .cover-image{
+    height: 200px;
+  }
+  
+  .profile-image-container{
+    width: 80px;
+    height: 80px;
+    /* margin-left: 5px; */
+    margin-left: 0.3rem;
+  }
+
+  .profile-camera{
+    bottom: 0.6rem;
+    right: 0.2rem;
+  }
+  .anti-profile-camera{
+		bottom: 0.6rem;
+    left: 0.2rem;
+  }
+
+	.profile-banner-layout{
+		display: initial;
+	}
+
+	.account--user-detail{
+		margin-top: 0.5rem;
+	}
+
+  /* jobs */
+  .jobs--user-profile--list-view{
+    width: 38px;
+    height: 38px;
+  }
+
+  /* popup */
+  .logout-confirm{
+    left: 20%;
+    right: 20%;
+    height: 70px;
+    top: 30vh;
+  }
+
+  /* icons */
+  .custom-icon-lg{
+    width: 20px;
+    height: 20px;
+  }
+
+  .custom-icon-xl{
+    width: 25px;
+    height: 25px;
+  }
+
+  /* general */
+  *{
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 300px){
+  .home-search-input{
+    width: 120px;
+  }
+}
+
+@media(max-height: 280px){
+	.login-view{
+		margin-top: 6vh;
+	}
+}
+
+@media(max-width: 260px){
+  .filter-exclude-ctn{
+    left: 2.5%
+  }
+
+  .home-search-icon{
+    z-index: 1;
+    position: absolute;
+  }
+
+  .home-search-input{
+    width: 90%;
+  }
+
+  /* filter */
+  .filter-input-sm{
+    width: 70px;
+  }
+
+  /* account */
+  .profile-camera{
+    bottom: 0.5rem;
+    right: 0.1rem;
+  }
+  .anti-profile-camera{
+		bottom: 0.5rem;
+    left: 0.1rem;
+  }
+
+  .cover-image{
+    height: 135px;
+  }
+  
+  .profile-image-container{
+    width: 70px;
+    height: 70px;
+    margin-left: 5px;
+  }
+
+  .cms-3{
+    margin-left: 2px;
+  }
+
+  /* popup */
+  .logout-confirm{
+    height: 65px;
+    padding-top: 5px;
+    top: 35vh;
+  }
+
+  /* icons */
+  .custom-icon-xl{
+    width: 23px;
+    height: 23px;
+  }
+}
+
+/* media queries */
+
+@media(max-width: 260px){
+  .lt-260\:text-end{
+    text-align: end;
+  }
+
+  .lt-260\:my-0{
+    margin-block: 0px;
+  }
+
+  .lt-260\:none{
+    display: none;
+    background-color: red;
+    color: red;
+  }
+}
+
+@media(min-width: 261px){
+	.gt-260\:none{
+		display: none;
+	}
+
+	.gt-260-none{
+		display: none;
+	}
+}
+
+@media(max-width: 200px){
+  /* nav bar */
+  .home-search-input{
+    width: 88%;
+  }
+
+  .jobs--user-profile--list-view{
+     width: 35px;
+     height: 35px;
+  }
+}
+
+@media(max-width: 180px){
+  /* nav bar */
+  .home-search-input{
+    width: 86%;
+  }
+}
+
+@media(max-height: 360px){
+	*{
+		font-size: 14px;
+	}
+}
+
+@media(max-height: 260px){
+	*{
+		font-size: 14px;
+	}
+}
+
+@media(prefers-color-scheme: light){
+	.system-color-scheme{
+		background-color: white;
+		color: black;
+	}
+
+	.system-color-scheme .app-background{
+		background-color: white;
+		color: black;
+	}
+
+	.system-color-scheme .app-text-color{
+		color: black;
+	}
+}
+
+@media(prefers-color-scheme: dark){
+	.system-color-scheme{
+		background-color: black;
+		color: white;
+	}
+
+	.system-color-scheme .app-background{
+		background-color: black;
+		color: white;
+	}
+
+	.system-color-scheme .app-text-color{
+		color: white;
+	}
+
+	.system-color-scheme{
+		--app-shadow-color: rgba(255, 255, 255, 0.75);
+		--app-text-color: white;
+		--app-background-color: black;
+	}
+}
