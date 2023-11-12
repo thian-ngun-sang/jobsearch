@@ -112,7 +112,6 @@ function Account(){
                     url: "",
                     editState: false})
 
-                console.log(res.data);
             })
             .catch(err => console.log(err))
     }
@@ -137,7 +136,6 @@ function Account(){
                     url: "",
                     editState: false
                 })
-                console.log(res)
             })
             .catch(err => console.log(err))
     }
@@ -164,7 +162,6 @@ function Account(){
 					&& !accountOptionEllipsis.current.contains(event.target) // the button that triggers 'setEditOptionState'
 					&& editOptionState){
 						setEditOptionState(false);
-						// console.log("mousedown outside account option");
 						document.removeEventListener("mousedown", mousedownOutsideAccountOption);
 				}
 			}else{
@@ -183,13 +180,11 @@ function Account(){
         window.addEventListener('scroll', handleScroll);
 
         return () => {
-            console.log("Profile edit dropdown removed");
             window.removeEventListener('scroll', handleScroll);
         };
     }, [editOptionState]);
 
 		useEffect(() => {
-			console.log(accountOptionRef.current);
 			if(accountOptionRef.current){
 				document.addEventListener("mousedown", mousedownOutsideAccountOption);
 			}

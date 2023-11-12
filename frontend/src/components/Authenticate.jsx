@@ -12,7 +12,6 @@ function Authenticate(){
     const token = localStorage.getItem('token'); // get token from local storage
 
     useEffect(() => {
-        console.log("Authenticating Component was run");
         
         if(token !== "" && token !== undefined && token !== null){
             axios.defaults.headers["Authorization"] = `Bearer ${token}`
