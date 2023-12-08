@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-const config = require("./config.json");
 
 const AuthContext = React.createContext();
 
@@ -7,8 +6,7 @@ function AuthContextProvider(props){
     const auth_data = {
         token: "",
         user: {},
-        // baseUrl: "http://192.168.43.131:8000"
-				baseUrl: config.baseURL
+				baseUrl: process.env.REACT_APP_BACKEND_URL
     };
 
     const [authState, setAuthState] = useState(auth_data);

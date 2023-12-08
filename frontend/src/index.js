@@ -6,11 +6,9 @@ import {AuthContextProvider} from "./auth_context";
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
-const config = require("./config.json")
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-axios.defaults.baseURL = config.baseURL;
+axios.defaults.baseURL = process.env.REACT_APP_BACKEND_URL;
 
 root.render(
   <AuthContextProvider>
