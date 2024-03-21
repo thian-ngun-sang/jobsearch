@@ -1,30 +1,28 @@
-import likeIcon from "../assets/icons/svgs/like.svg";
-import loveIcon from "../assets/icons/svgs/love.svg";
-import sadIcon from "../assets/icons/svgs/sad.svg";
-import angryIcon from "../assets/icons/svgs/angry.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faThumbsUp, faMessage, faShare, faFaceSadTear, faFaceFrown, faHeart } from "@fortawesome/free-solid-svg-icons";
 
-import commentIcon from "../assets/icons/svgs/comment.svg";
-import shareIcon from "../assets/icons/svgs/share.svg";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
-function Upshot({toggleCommentForm}){
+function Upshot({toggleCommentForm, openSharePopup, closeSharePopup}){
     const [reactionPopupState, setReactionPopupState] = useState(false);
     const [commentFormState, setCommentFormState] = useState(true);
+
+		const sharePopupRef = useRef(null);
 
     // reaction list template
     const reactionList = (
         <div className="d-flex reaction-popup">
-            <span>
-                <img src={likeIcon} alt={likeIcon} className="custom-icon-xl"/>
+						<span className="cursor-pointer">
+							<FontAwesomeIcon className="c-icon text-dark" icon={faThumbsUp}/>
+						</span>
+            <span className="cursor-pointer">
+								<FontAwesomeIcon className="c-icon text-dark" icon={faHeart}/>
             </span>
-            <span>
-                <img src={loveIcon} alt={likeIcon} className="custom-icon-xl"/>
+            <span className="cursor-pointer">
+							<FontAwesomeIcon className="c-icon text-dark" icon={faFaceSadTear}/>
             </span>
-            <span>
-                <img src={sadIcon} alt={likeIcon} className="custom-icon-xl"/>
-            </span>
-            <span>
-                <img src={angryIcon} alt={likeIcon} className="custom-icon-xl"/>
+            <span className="cursor-pointer">
+								<FontAwesomeIcon className="c-icon text-dark" icon={faFaceFrown}/>
             </span>
         </div>
     )
@@ -52,16 +50,21 @@ function Upshot({toggleCommentForm}){
             <div className="upshots-layout">
                 <span className="text-start ms-2" onMouseLeave={hideReactionPopup}>
                     { reactionPopupState && reactionList }
-                    <img className="custom-icon-xl" onMouseEnter={showReactionPopup} src={likeIcon} alt={likeIcon}/>
+										<span className="custom-icon-xl" onMouseEnter={showReactionPopup}>
+											<FontAwesomeIcon className="c-icon" icon={faThumbsUp}/>
+										</span>
                 </span>
                 <span className="text-center">
-                    <img className="custom-icon-xl" src={commentIcon} alt={commentIcon}/>
+										<span className="custom-icon-xl" onClick={toggleCommentForm}>
+											<FontAwesomeIcon className="c-icon" icon={faMessage}/>
+										</span>
                 </span>
                 <span className="text-end me-2">
-                    <img className="custom-icon-xl" src={shareIcon} alt={shareIcon}/>
+										<span className="custom-icon-xl" onClick={openSharePopup}> 
+												<FontAwesomeIcon className="c-icon" icon={faShare} />
+										</span>
                 </span>
             </div>
-            {/* { commentFormState && commentForm } */}
         </div>
         
     );

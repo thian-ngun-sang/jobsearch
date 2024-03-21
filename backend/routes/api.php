@@ -36,6 +36,12 @@ Route::group(['middleware' => 'auth:sanctum', 'namespace' => 'App\Http\Controlle
     Route::post('/account/change-cover-image', ['uses' => 'UserController@changeCoverImage']);
     // change profile image
     Route::post('/account/change-profile-image', ['uses' => 'UserController@changeProfileImage']);
+
+    Route::get('/posts', ['uses' => 'PostController@index']);
+    Route::get('/posts/show/{id}', ['uses' => 'PostController@show']);
+    Route::post('/posts/update/{id}', ['uses' => 'PostController@update']);
+    Route::post('/posts/create', ['uses' => 'PostController@store']);
+    Route::delete('/posts/delete/{id}', ['uses' => 'PostController@destroy']);
 });
 
 Route::group(['namespace' => 'App\Http\Controllers'], function(){

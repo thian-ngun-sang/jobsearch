@@ -116,24 +116,24 @@ function Navbar(){
 		}
 
     const accountDropdown = <div className="position-absolute text-start app-background account-option" ref={accountDropdownRef}>
-            <ul className="custom-list">
-                <li>
-                    <NavLink className="custom-link text-center" activeclassname="active" to="/account" onClick={closeAccountDropdown}>Profile</NavLink>
-                </li>
-                <li>
-                    <NavLink className="custom-link text-center" activeclassname="active" to="/saved-jobs" onClick={closeAccountDropdown}>Saved Jobs</NavLink>
-                </li>
-                <li>
-                    <NavLink className="custom-link" to="/account/change-password" onClick={closeAccountDropdown}>Change Password</NavLink>
-                </li>
-                <li>
-                		<span className="custom-link cursor-pointer" onClick={openSettings}>Settings</span> 
-                </li>
-                <li>
-                    <span className="custom-link cursor-pointer" onClick={toggleLogoutRequest}>Logout</span>
-                </li>
-            </ul>
-        </div>;
+			<ul className="custom-list">
+					<li>
+						<NavLink className="custom-link text-center" activeclassname="active" to="/account" onClick={closeAccountDropdown}>Profile</NavLink>
+					</li>
+					<li>
+						<NavLink className="custom-link text-center" activeclassname="active" to="/saved-jobs" onClick={closeAccountDropdown}>Saved Jobs</NavLink>
+					</li>
+					<li>
+						<NavLink className="custom-link" to="/account/change-password" onClick={closeAccountDropdown}>Change Password</NavLink>
+					</li>
+					<li>
+						<span className="custom-link cursor-pointer" onClick={openSettings}>Settings</span> 
+					</li>
+					<li>
+						<span className="custom-link cursor-pointer" onClick={toggleLogoutRequest}>Logout</span>
+					</li>
+			</ul>
+		</div>;
 
     // logout confirm template
     const logoutConfirm = (<div className="position-absolute logout-confirm app-background" id="logout-confirm-id" ref={logoutConfirmRef}>
@@ -273,9 +273,9 @@ function Navbar(){
                     <li>
                         <NavLink className="custom-nav-item" activeclassname="active" to="/jobs">Jobs</NavLink>
                     </li>
-                    <li>
+										{/* <li>
                         <NavLink className="custom-nav-item" activeclassname="active" to="/saved-jobs">Saved Jobs</NavLink>
-                    </li>
+                    </li> */}
 										{/*
                     <li>
                         <NavLink className="custom-nav-item" activeclassname="active" to="/chat">Chat</NavLink>

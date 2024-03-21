@@ -11,8 +11,7 @@ use Illuminate\Support\Facades\DB;
 use App\Http\Requests\StoreJobRequest;
 use App\Http\Requests\UpdateJobRequest;
 
-class JobController extends Controller
-{
+class JobController extends Controller {
 
     private function filterJobs($request, $jobsParam){
         $localJobs = $jobsParam;
@@ -162,9 +161,7 @@ class JobController extends Controller
         return $localJobs;
     }
 
-    /**
-     * Display a listing of the resource.
-     */
+    // Display a listing of the resource.
     public function index(Request $request){
         $jobs = [];
         
@@ -208,8 +205,7 @@ class JobController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -242,32 +238,28 @@ class JobController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Job $job)
-    {
+    public function show(Job $job) {
         //
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Job $job)
-    {
+    public function edit(Job $job) {
         //
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateJobRequest $request, Job $job)
-    {
+    public function update(UpdateJobRequest $request, Job $job) {
         //
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Job $job)
-    {
+    public function destroy(Job $job) {
         //
     }
 }

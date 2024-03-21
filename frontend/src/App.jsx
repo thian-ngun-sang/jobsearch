@@ -13,6 +13,7 @@ import NotFound from './views/NotFound';
 import Jobs from './views/Jobs';
 import CreateJob from './views/CreateJob';
 import SavedJobs from './views/SavedJobs';
+import CreatePost from './views/CreatePost';
 
 import Authenticate from "./components/Authenticate";
 import Authorize from './components/Authorize';
@@ -62,11 +63,15 @@ function App() {
                 <Route path="/" element={<Authenticate/>}>
                     <Route path="/" element={<Authorize/>}>
                         <Route path="/" element={<AppLayout/>}>
-                            <Route path="/jobs" element={<Jobs/>}/>
                             <Route index path="/" element={<Home/>}/>
+                            <Route path="/create-post" element={<CreatePost/>}/>
+
+                            <Route path="/jobs" element={<Jobs/>}/>
                             <Route path="/create-job" element={<CreateJob/>}/>
                             <Route path="/saved-jobs" element={<SavedJobs/>}/>
+
                             <Route path="/account" element={<Account/>}/>
+
                             <Route path="/chat" element={<Chat/>}/>
                             <Route path="/chat/:id" element={<SingleChat/>}/>
                             <Route path="/story/:id" element={<SingleStory/>}/>

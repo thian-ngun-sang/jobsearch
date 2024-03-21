@@ -181,12 +181,12 @@ const Job = ({job, removedJobs, setRemovedJobs, savedJobDispatch}) => {
     return (
         blackListedJobState.state
         ? <>
-            <div className="">
+            <div>
 							You won't see this job in your results.  
 							<span className="text-primary cursor-pointer ms-1" onClick={undoJobBlackList}>Undo</span>
 	    			</div>
         </>
-        :<>
+        : <>
             {/* job banner start */}
             <div className="d-flex justify-content-between mb-3 position-relative">
                 <div className="d-flex">

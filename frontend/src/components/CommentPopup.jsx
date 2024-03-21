@@ -1,48 +1,98 @@
-const CommentPopup = ({commentText, setCommentText, setCommentFormState}) => {
+import { useEffect, useRef } from "react";
+
+import nationPark from "../assets/images/posts/kruger_national_park.webp";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
+
+
+const CommentPopup = ({commentText, setCommentText, commentFormState, setCommentFormState, customRef}) => {
+		const commentFormTextareaRef = useRef(null);
+		
+		const closeCommentPopup = () => {
+			setCommentFormState(false);
+		}
+
     const handleComment = (event) => {
-        // console.log(event.target.value);
-        setCommentText(event.target.value);
+				setCommentText(event.target.value);
     }
 
-    // top most
-        // screenX 669
-        // screenY 163
+		useEffect(() => {
+				let valueInJson = JSON.stringify(commentText);
+			 	var textarea = commentFormTextareaRef.current;
 
-    // bottom
-        // screenX 711
-        // screenY 183
-    const handleScroll = (event) => {
-        // console.log("screenX " + event.screenX, "screenY " + event.screenY);
-        // if(event.deltaY >= 15 || event.deltaY <= -20){
-        //     setCommentFormState(false);
-        // }
+				// new line character count in textarea
+				const newLineCount = valueInJson.split("\\n").length - 1;
+				if(newLineCount === 0){
+					textarea.rows = 1;
+					textarea.style.height = textarea.rows + 0.9 + 'rem';
+				}else if(newLineCount < 3){
+					// textarea.style.height = newLineCount + 1 + 0.9 + 'rem';
+					textarea.rows = newLineCount + 1;
+					textarea.style.height = textarea.rows + 1.5 + 'rem';
+				}
 
-        // deltaX: 0
-        // deltaY: 3.1092529296875
-        //
-        // deltaX: 0
-        // deltaY: 49.594645182291664
-
-        // deltaX: 0
-        // deltaY: -3.08319091796875
-        //
-        // deltaX: 0
-        // deltaY: -1.58575439453125
-
-        console.log(event);
-    }
+		}, [commentText, commentFormState]);
 
     return (
-        <div className="comment-popup" onWheel={handleScroll}>
+        <div className="comment-popup" ref={customRef}>
+						<div className="text-end">
+							<span className="cursor-pointer" onClick={closeCommentPopup}>
+								<FontAwesomeIcon className="c-icon" icon={faXmark}/>
+							</span>
+						</div>
             <div className="comment-list">
-                <p className="comment">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium aliquam magnam, ab adipisci corporis voluptatum reprehenderit eius repudiandae, aut laboriosam animi at placeat quae ipsam atque eum distinctio in!
-                </p>
+							<ul className="custom-list">
+
+								<li>
+									<div className="d-flex">
+										<img className="user-profile" src={nationPark} alt="user-profile"/>
+										<div className="ms-2">
+											<div>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium aliquam magnam, ab adipisci corporis voluptatum reprehenderit eius repudiandae, aut laboriosam animi at placeat quae ipsam atque eum distinctio in!
+											</div>
+											<div>
+												<span>1d</span>	
+											</div>
+										</div>
+									</div>
+								</li>								
+
+								<li>
+									<div className="d-flex">
+										<img className="user-profile" src={nationPark} alt="user-profile"/>
+										<div className="ms-2">
+											<div>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium aliquam magnam, ab adipisci corporis voluptatum reprehenderit eius repudiandae, aut laboriosam animi at placeat quae ipsam atque eum distinctio in!
+											</div>
+											<div>
+												<span>1d</span>	
+											</div>
+										</div>
+									</div>
+								</li>								
+
+								<li>
+									<div className="d-flex">
+										<img className="user-profile" src={nationPark} alt="user-profile"/>
+										<div className="ms-2">
+											<div>
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium aliquam magnam, ab adipisci corporis voluptatum reprehenderit eius repudiandae, aut laboriosam animi at placeat quae ipsam atque eum distinctio in!
+											</div>
+											<div>
+												<span>1d</span>	
+											</div>
+										</div>
+									</div>
+								</li>								
+
+							</ul>
             </div>
-            <div className="d-flex comment-form mt-2">
-                <textarea className="comment-textarea bg-white" onKeyUp={handleComment} placeholder="What's on your opion"></textarea>
+            <div className="d-flex mt-2">
+									<textarea id="myTextarea" className="comment-textarea" ref={commentFormTextareaRef}
+									onChange={handleComment} placeholder="What's on your opion" value={commentText}></textarea>
                 <div className="ms-2">
-                    <button>Comment</button>
+                    <button className="text-like-btn app-popup-background">Comment</button>
                 </div>
             </div>
         </div>

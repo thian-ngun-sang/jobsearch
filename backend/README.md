@@ -35,10 +35,11 @@ prepare project
         # - if something went wrong remove 'vendor" directory
         #       and run "sudo composer --ignore-platform-req=ext-curl install"
 
+php artisan key:generate
 php artisan storage:link =>
         if you want to use local storage
         # - if there is 'storage' link inside 'public' directory already exists
         #       delete it, rerun this command
 
 
-php artisan --host={private_ip_address} serve
+php artisan --host={private-ip-address} serve

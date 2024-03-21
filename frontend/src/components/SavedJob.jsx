@@ -3,9 +3,6 @@ import { useState, useEffect, useRef, useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis, faXmark } from "@fortawesome/free-solid-svg-icons";
 
-// import closeMd from "../assets/icons/svgs/close-md.svg";
-// import moreHorizontal from "../assets/icons/svgs/more-horizontal.svg";
-
 import { AuthContext } from "../auth_context";
 
 import femaleDefaultProfile from "../assets/images/defaults/female_user.jpg";
