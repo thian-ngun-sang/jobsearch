@@ -4,7 +4,7 @@ import { AuthContext } from "./auth_context";
 
 import Login from './views/Login';
 import Register from './views/Register';
-import Home from './views/Home';
+// import Home from './views/Home';
 import Chat from './views/Chat';
 import Account from './views/Account';
 import EditProfile from './views/EditProfile';
@@ -63,10 +63,10 @@ function App() {
                 <Route path="/" element={<Authenticate/>}>
                     <Route path="/" element={<Authorize/>}>
                         <Route path="/" element={<AppLayout/>}>
-                            <Route index path="/" element={<Home/>}/>
+                            <Route index path="/" element={<Jobs/>}/>
                             <Route path="/create-post" element={<CreatePost/>}/>
 
-                            <Route path="/jobs" element={<Jobs/>}/>
+														{/* <Route path="/jobs" element={<Jobs/>}/> */}
                             <Route path="/create-job" element={<CreateJob/>}/>
                             <Route path="/saved-jobs" element={<SavedJobs/>}/>
 

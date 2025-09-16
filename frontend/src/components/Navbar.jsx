@@ -120,9 +120,9 @@ function Navbar(){
 					<li>
 						<NavLink className="custom-link text-center" activeclassname="active" to="/account" onClick={closeAccountDropdown}>Profile</NavLink>
 					</li>
-					<li>
+					{/* <li>
 						<NavLink className="custom-link text-center" activeclassname="active" to="/saved-jobs" onClick={closeAccountDropdown}>Saved Jobs</NavLink>
-					</li>
+					</li> */}
 					<li>
 						<NavLink className="custom-link" to="/account/change-password" onClick={closeAccountDropdown}>Change Password</NavLink>
 					</li>
@@ -158,11 +158,6 @@ function Navbar(){
 					</div>
 				</div>
 				<div>
-					{/* <select>
-						<option>default</option>
-						<option>white</option>
-						<option>dark</option>
-					</select> */}
 					<div>
 
 						<div>
@@ -267,20 +262,15 @@ function Navbar(){
                     </div>
                 </div>
                 <ul className="main-nav-layout">
-                    <li>
+										<li>
                         <NavLink className="custom-nav-item" activeclassname="active" to="/">Home</NavLink>
                     </li>
-                    <li>
-                        <NavLink className="custom-nav-item" activeclassname="active" to="/jobs">Jobs</NavLink>
-                    </li>
 										{/* <li>
-                        <NavLink className="custom-nav-item" activeclassname="active" to="/saved-jobs">Saved Jobs</NavLink>
+                        <NavLink className="custom-nav-item" activeclassname="active" to="/jobs">Jobs</NavLink>
                     </li> */}
-										{/*
-                    <li>
-                        <NavLink className="custom-nav-item" activeclassname="active" to="/chat">Chat</NavLink>
+										<li>
+                        <NavLink className="custom-nav-item" activeclassname="active" to="/saved-jobs">Saved Jobs</NavLink>
                     </li>
-										*/}
                     <li>
                         <span className="custom-nav-item cursor-pointer text-primary" ref={accountDropdownToggleRef} onClick={toggleAccountDropdown}>Account</span>
                         { accountDropdownState && accountDropdown }
