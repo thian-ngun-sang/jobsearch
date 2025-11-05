@@ -11,7 +11,6 @@ import defaultCoverImage from "../assets/images/defaults/cover_image.jpg";
 import cameraIcon from "../assets/icons/svgs/camera-white.svg";
 import closeWhiteIcon from "../assets/icons/svgs/close-white.svg";
 import tickIcon from "../assets/icons/svgs/tick-white.svg";
-import moreHorizontalIcon from "../assets/icons/svgs/more-horizontal.svg";
 
 import { AuthContext } from "../auth_context";
 
@@ -247,7 +246,6 @@ function Account(){
                         </div>
 
                         <div className="account-edit-option-ctn">
-			{/* <img className="custom-icon-lg" onClick={openAccountOption} alt="Horizontal more icon" src={moreHorizontalIcon}/> */}
 														<span className="cursor-pointer" onClick={openAccountOption} ref={accountOptionEllipsis}>
 															<FontAwesomeIcon className="c-icon" icon={faEllipsis} />
 														</span>

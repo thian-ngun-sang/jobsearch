@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import femaleUserImg from "../assets/images/defaults/female_user.jpg";
 
 import backIcon from "../assets/icons/svgs/back.svg";
@@ -13,7 +13,7 @@ function SingleChat(){
 
     return (
         <div>
-            <img src={backIcon} onClick={stepBack} className="custom-icon-xl"/>
+            <img src={backIcon} onClick={stepBack} className="custom-icon-xl" alt="back-icon"/>
             <div className="d-flex justify-content-between mt-1">
                 <div className="d-flex align-items-center">
                     <img src={femaleUserImg} className="chat-user-item mx-2"/>

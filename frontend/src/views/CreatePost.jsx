@@ -1,5 +1,3 @@
-import { useContext, useEffect } from "react";
-
 function CreatePost(){
 	return <div>
 		<div>Create post page</div>

@@ -9,7 +9,6 @@ import { AuthContext } from "../auth_context";
 
 import AuthLayout from "../components/AuthLayout";
 
-import backIcon from "../assets/icons/svgs/back.svg";
 
 function EditProfile(){
     const authContext =  useContext(AuthContext);
@@ -69,8 +68,6 @@ function EditProfile(){
         <AuthLayout>
             {/* <button>Back</button> */}
 						<div className="account-edit-form">
-							{/* <img className="custom-icon-xl" alt={backIcon} onClick={stepBack} src={backIcon}/> */ }
-							{/* <FontAwesomeIcon icon="fa-solid fa-arrow-left" /> */}
 							<FontAwesomeIcon className="c-icon cursor-pointer" onClick={stepBack} icon={ faArrowLeft } />
 							<form onSubmit={submitForm}>
 									<div className="custom-input-container">

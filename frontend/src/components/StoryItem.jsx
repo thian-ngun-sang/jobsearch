@@ -6,7 +6,7 @@ function StoryItem(){
     return (
         <li className="mx-2">
             <Link to="/story/1">
-                <img className="chat-user-item-lg" src={femaleDefaultProfile}/>
+                <img className="chat-user-item-lg" src={femaleDefaultProfile} alt="user-profile"/>
             </Link>
             <h6>Na Na</h6>
         </li>            
